@@ -2,7 +2,7 @@
 const Home = {
   name: 'Home',
   template: `
-    <div class="home">
+    <div class="center">
 
       <img src="/static/images/logo.png" alt="VueJS Logo">
       <h1>
@@ -37,9 +37,9 @@ const NewsList = {
 
     </div>
 
-    <div class="newnews">
+    <div class="all-news">
 
-      <div v-for="article in articles" class="news__item">
+      <div v-for="article in articles" class="news-card">
         <h5 class="card-title">
           {{ article.title }}
         </h5>
